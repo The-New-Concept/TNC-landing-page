@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
 import './style.css'
-import App from './App.vue'
+import HeroSection from './HeroSection.vue'
 
-createApp(App).mount('#app')
+createApp(HeroSection).mount('#HeroSection')

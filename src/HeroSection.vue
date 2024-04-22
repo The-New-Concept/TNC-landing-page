@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-orange">
+  <div class="bg-orange h-screen">
     <header class="absolute inset-x-0 top-0 z-50">
       <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <!-- Left NAV -->
@@ -23,7 +23,7 @@
 
         <!-- Right NAV -->
         <div class="hidden lg:flex lg:gap-x-12 lg:justify-end">
-          <a v-for="item in navigationLeft" :key="item.name" :href="item.href" class="text-sm leading-6 text-white hover:text-gray-200">{{ item.name }}</a>
+          <a v-for="item in navigationRight" :key="item.name" :href="item.href" class="text-sm leading-6 text-white hover:text-gray-200">{{ item.name }}</a>
         </div>
       </nav>
       <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
@@ -65,7 +65,7 @@
       </div>
 
       <div class="flex lg:flex-1 justify-center items-center	">
-        <img class="h-41 w-auto" src="./assets/TNC-Logo.png" alt="">
+        <img class="h-3/6 w-auto" src="./assets/TNC-Logo.png" alt="">
       </div>
     </div>
   </div>
