@@ -21,8 +21,7 @@
       <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
         <div class="lg:pr-4">
           <div class="lg:max-w-lg">
-            <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About Us</h1>
-            <p class="mt-6 text-xl leading-8 text-gray-700"><strong>The New Concept</strong> is an avant-garde entertainment company specializing in creating innovative games and experiences for a diverse audience. With a foundation built on extensive industry experience, our team has initiated groundbreaking projects across the globe, including in Jordan, Saudi Arabia, Iraq, Oman, India, Spain, and the USA. Our mission is to elevate the entertainment industry by introducing a new paradigm of engaging, immersive experiences that cater to various age groups.</p>
+            <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Strategic Focus Areas:</h1>
           </div>
         </div>
       </div>
@@ -39,12 +38,22 @@
             <ul role="list" class="mt-8 space-y-8 text-gray-600">
               <li class="flex gap-x-3">
                 <EyeIcon class="mt-1 h-5 w-5 flex-none text-orange-light" aria-hidden="true" />
-                <span><strong class="font-semibold text-gray-900">Our Vision</strong> Is too be at the forefront of the entertainment industry, constantly pushing the boundaries of creativity and technology to provide novel entertainment options that captivate and inspire audiences worldwide.
+                <span><strong class="font-semibold text-gray-900">Research and Development:</strong> Investing in a dedicated R&D team to ensure a constant flow of innovative ideas and technologies.
 </span>
               </li>
               <li class="flex gap-x-3">
                 <CheckIcon class="mt-1 h-5 w-5 flex-none text-orange-light" aria-hidden="true" />
-                <span><strong class="font-semibold text-gray-900">Our Mission</strong> Is to innovate and redefine the standards of entertainment through the development of cutting-edge games and experiences that appeal to a broad spectrum of audiences, thereby enhancing the global entertainment landscape.
+                <span><strong class="font-semibold text-gray-900">Global Reach:</strong> Leveraging our international experience to create culturally diverse and globally appealing content.
+</span>
+              </li>
+              <li class="flex gap-x-3">
+                <CheckIcon class="mt-1 h-5 w-5 flex-none text-orange-light" aria-hidden="true" />
+                <span><strong class="font-semibold text-gray-900">Technological Advancement:</strong> Utilizing the latest technologies, including VR, AR, and AI, to create immersive and interactive experiences.
+</span>
+              </li>
+              <li class="flex gap-x-3">
+                <CheckIcon class="mt-1 h-5 w-5 flex-none text-orange-light" aria-hidden="true" />
+                <span><strong class="font-semibold text-gray-900">Community Engagement:</strong>Building and nurturing a strong community around our games and experiences to foster loyalty and feedback.
 </span>
               </li>
             </ul>
