@@ -9,6 +9,7 @@ export default {
     extend: {
       colors: {
         'orange': '#A91F24',
+        'orange-light': '#F36F21'
       },
     },
   },
