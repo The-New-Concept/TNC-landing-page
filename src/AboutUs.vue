@@ -1,5 +1,7 @@
 <template>
   <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+
+    <!-- BG Pattern-->
     <div class="absolute inset-0 -z-10 overflow-hidden">
       <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
         <defs>
@@ -13,6 +15,8 @@
         <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
       </svg>
     </div>
+    <!-- /BG Pattern-->
+
     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
       <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
         <div class="lg:pr-4">
@@ -22,20 +26,24 @@
           </div>
         </div>
       </div>
+
+      <!-- Side Image -->
       <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
         <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="" />
       </div>
+      <!-- /Side Image -->
+
       <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
         <div class="lg:pr-4">
           <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
             <ul role="list" class="mt-8 space-y-8 text-gray-600">
               <li class="flex gap-x-3">
-                <EyeIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                <EyeIcon class="mt-1 h-5 w-5 flex-none text-orange-light" aria-hidden="true" />
                 <span><strong class="font-semibold text-gray-900">Our Vision</strong> Is too be at the forefront of the entertainment industry, constantly pushing the boundaries of creativity and technology to provide novel entertainment options that captivate and inspire audiences worldwide.
 </span>
               </li>
               <li class="flex gap-x-3">
-                <CheckIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                <CheckIcon class="mt-1 h-5 w-5 flex-none text-orange-light" aria-hidden="true" />
                 <span><strong class="font-semibold text-gray-900">Our Mission</strong> Is to innovate and redefine the standards of entertainment through the development of cutting-edge games and experiences that appeal to a broad spectrum of audiences, thereby enhancing the global entertainment landscape.
 </span>
               </li>
