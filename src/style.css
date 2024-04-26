@@ -16,7 +16,6 @@
 }
 
 .hero-section {
-  background-image: url("src/assets/Hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class=" h-screen bg-[url('assets/Hero-bg.png')]">
+  <div class=" h-screen hero-section bg-[url('assets/Hero-bg.png')]">
     <header class="absolute inset-x-0 top-0 z-50">
       <nav class="flex items-center justify-between p-6 lg:px-8 " aria-label="Global">
         <!-- Left NAV -->
