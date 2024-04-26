@@ -1,10 +1,10 @@
 <template>
-  <div class="bg-orange h-screen">
+  <div class="bg-orange h-screen hero-section">
     <header class="absolute inset-x-0 top-0 z-50">
-      <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav class="flex items-center justify-between p-6 lg:px-8 " aria-label="Global">
         <!-- Left NAV -->
         <div class="hidden lg:flex lg:gap-x-12">
-          <a v-for="item in navigationLeft" :key="item.name" :href="item.href" class="text-sm leading-6 text-white hover:text-gray-200">{{ item.name }}</a>
+          <a v-for="item in navigationLeft" :key="item.name" :href="item.href" class="transition-all hover:bg-orange text-sm px-2 py-1 rounded leading-6 text-white hover:text-gray-200">{{ item.name }}</a>
         </div>
         <!-- Nav Logo -->
         <div class="flex lg:flex-1 justify-center">
@@ -23,7 +23,7 @@
 
         <!-- Right NAV -->
         <div class="hidden lg:flex lg:gap-x-12 lg:justify-end">
-          <a v-for="item in navigationRight" :key="item.name" :href="item.href" class="text-sm leading-6 text-white hover:text-gray-200">{{ item.name }}</a>
+          <a v-for="item in navigationRight" :key="item.name" :href="item.href" class="transition-all	hover:bg-orange text-sm px-2 py-1 rounded leading-6 text-white hover:text-gray-200">{{ item.name }}</a>
         </div>
       </nav>
       <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
@@ -55,11 +55,11 @@
 
     <div class="flex relative isolate px-6 pt-14 lg:px-8">
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-        <div class="text-center">
+        <div class="text-left">
           <h1 class="text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl">The New Concept</h1>
           <p class="mt-6 text-lg leading-8 text-white">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-          <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="#" class="btn-white rounded-md px-3.5 py-2.5 text-sm font-medium shadow-sm hover:opacity-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange">Contact Us</a>
+          <div class="mt-10 flex items-left justify-left gap-x-6">
+            <a href="#" class="btn-white">Contact Us</a>
           </div>
         </div>
       </div>
