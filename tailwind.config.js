@@ -5,7 +5,9 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-
+    fontFamily: {
+      sans: ["Montserrat", "sans-serif"]
+    },
     extend: {
       colors: {
         'orange': '#A91F24',
