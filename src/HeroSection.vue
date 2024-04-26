@@ -59,7 +59,7 @@
           <h1 class="text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl">The New Concept</h1>
           <p class="mt-6 text-lg leading-8 text-white">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
           <div class="mt-10 flex items-left justify-left gap-x-6">
-            <a href="#" class="btn-white rounded-sm px-5 py-3 text-sm font-medium shadow-sm hover:opacity-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange">Contact Us</a>
+            <a href="#" class="btn-white">Contact Us</a>
           </div>
         </div>
       </div>
