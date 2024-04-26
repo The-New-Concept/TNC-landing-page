@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .product-card {
   @apply bg-white border rounded drop-shadow-xl p-10 text-center h-auto;
+}
+
+.btn-white {
+  @apply bg-white text-orange;
+}
+
+.btn-orange {
+  @apply bg-orange text-white;
 }
