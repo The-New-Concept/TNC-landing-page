@@ -13,6 +13,9 @@ export default {
         'orange': '#A91F24',
         'orange-light': '#F36F21'
       },
+      backgroundImage: {
+        'hero-grad': "url('/src/assets/Hero-bg.png')",
+      }
     },
   },
   plugins: [],
