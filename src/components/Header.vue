@@ -10,13 +10,13 @@ import {Dialog, DialogPanel} from "@headlessui/vue";
 import {Bars3Icon, XMarkIcon} from "@heroicons/vue/24/outline";
 
 const navigationLeft = [
-  { name: 'Home', href: '#' },
-  { name: 'About Us', href: '#' },
+  { name: 'Home', href: '/' },
+  { name: 'About Us', href: '/about' },
 
 ]
 const navigationRight = [
-  { name: 'Products', href: '#' },
-  { name: 'Contact Us', href: '#' },
+  { name: 'Products', href: '/products' },
+  { name: 'Contact Us', href: '/contact-us' },
 
 ]
 
