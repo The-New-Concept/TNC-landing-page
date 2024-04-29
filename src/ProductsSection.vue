@@ -47,11 +47,11 @@ const productsHome = [
 
     <h1 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Our Products</h1>
     <div class="mt-10 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-8 gap-8" >
-      <div v-for="product in productsHome" :key="product.name" class="product-card border-none bg-[url('assets/IMG_9197.JPG')]" >
-        <a  href="#">
-          <div class="" >
-            <h2 class="text-lg font-semibold">{{product.name}}</h2>
-            <p>{{ product.description }}</p>
+      <div v-for="product in productsHome" :key="product.name" class="product-card border-none bg-center bg-no-repeat bg-cover bg-[url('assets/tank-war.png')]" >
+        <a  href="#" class="bg-orange">
+          <div class="py-20 px-10 h-full " >
+            <h2 class="text-2xl font-semibold">{{product.name}}</h2>
+            <p class="text-sm">{{ product.description }}</p>
           </div>
         </a>
       </div>
