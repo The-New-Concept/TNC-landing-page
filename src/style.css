@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .product-card {
-  @apply bg-white border rounded drop-shadow-xl text-center h-auto overflow-hidden shadow-xl;
+  @apply bg-white border rounded drop-shadow-xl text-center h-fit overflow-hidden shadow-xl;
 }
 
 .btn-white {
