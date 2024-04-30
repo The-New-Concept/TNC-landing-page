@@ -7,7 +7,7 @@ import ValuesSection from './ValuesSection.vue'
 import StrategicFocusAreasSection from './StrategicFocusAreasSection.vue'
 import ProductsSection from './components/ProductsSection.vue'
 import OurProducts from './ProductsPage.vue'
-import ContactForm from './ContactForm.vue'
+import ContactForm from './components/ContactForm.vue'
 
 createApp(HeroSection).mount('#HeroSection');
 
