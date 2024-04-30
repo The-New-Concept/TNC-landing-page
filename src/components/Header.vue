@@ -11,12 +11,12 @@ import {Bars3Icon, XMarkIcon} from "@heroicons/vue/24/outline";
 
 const navigationLeft = [
   { name: 'Home', href: '/' },
-  { name: 'About Us', href: '/about' },
+  { name: 'About Us', href: '/about.html' },
 
 ]
 const navigationRight = [
-  { name: 'Products', href: '/products' },
-  { name: 'Contact Us', href: '/contact-us' },
+  { name: 'Products', href: '/products.html' },
+  { name: 'Contact Us', href: '/contact-us.html' },
 
 ]
 
