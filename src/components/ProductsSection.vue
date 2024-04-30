@@ -111,7 +111,7 @@ const productsHome = [
 </script>
 
 <template>
-  <div class="bg-[url('assets/Hero-bg.png')] h-screen bg-center bg-no-repeat bg-cover relative isolate md:overflow-scroll overflow-scroll te px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0" >
+  <div class="bg-[url('assets/Hero-bg.png')] min-h-screen sm:h-full bg-center bg-no-repeat bg-cover relative isolate md:overflow-scroll overflow-scroll te px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0" >
     <!-- BG Pattern-->
     <div class="absolute inset-0 -z-10 overflow-hidden">
       <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-orange [mask-image:radial-gradient(64rem_64rem_at_top,orange,transparent)]" aria-hidden="true">
@@ -125,7 +125,7 @@ const productsHome = [
       </svg>
     </div>
     <!-- /BG Pattern-->
-    <div class="flex flex-wrap px-10">
+    <div class="flex sm:flex-row flex-col flex-wrap px-10">
       <h1 class="text-white text-3xl font-bold uppercase" >our products</h1>
       <div class="w-full">
         <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
@@ -139,8 +139,8 @@ const productsHome = [
           <div class="px-4 py-5 flex-auto">
             <div class="tab-content tab-space">
               <div v-for="product in productsHome" :key="product.id" v-bind:class="{'hidden': openTab !== product.id, 'block': openTab === product.id}">
-                <div class="flex justify-between">
-                  <div class="shrink-1 w-1/2">
+                <div class="flex sm:flex-row flex-col flex-wrap justify-between">
+                  <div class="sm:shrink-1 shrink-0 sm:w-1/2">
                     <h2 class="text-2xl font-semibold text-orange">{{product.name}}</h2>
                     <p v-if="product.description.length >= 1" class="font-semibold mt-2 text-sm" >{{product.description}}</p>
                     <div class="mt-5">
@@ -156,7 +156,7 @@ const productsHome = [
                     <br/>
                     <a href="/contact-us" class="mt-2 btn-orange inline-block">Order Now</a>
                   </div>
-                  <div class="grid max-h-min grid-cols-1 md:grid-cols-2 auto-rows-2 gap-0.5 place-items-stretch auto-cols-auto flex-auto shrink-1 w-1/2">
+                  <div class="grid max-h-min grid-cols-1 md:grid-cols-2 auto-rows-2 gap-0.5 place-items-stretch auto-cols-auto flex-auto sm:shrink-1 shrink-0 sm:w-1/2 mt-10 sm:mt-0">
                     <div v-for="image in product.images" class="p-1">
                       <img class="shadow-lg rounded" :src="'src/assets/products/' + image" :alt="product.name">
                     </div>
