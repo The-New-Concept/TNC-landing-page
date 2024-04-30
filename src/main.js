@@ -5,7 +5,7 @@ import AboutUs from './AboutUs.vue'
 import AboutUsPage from './AboutUsPage.vue'
 import ValuesSection from './ValuesSection.vue'
 import StrategicFocusAreasSection from './StrategicFocusAreasSection.vue'
-import ProductsSection from './ProductsSection.vue'
+import ProductsSection from './components/ProductsSection.vue'
 import OurProducts from './ProductsPage.vue'
 
 createApp(HeroSection).mount('#HeroSection');
