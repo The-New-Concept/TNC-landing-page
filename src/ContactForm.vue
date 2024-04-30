@@ -7,12 +7,13 @@ import {CheckIcon, EyeIcon} from "@heroicons/vue/20/solid/index.js";
 </script>
 <template>
 <form
-    name="ask-question"
+    name="Contact"
     method="post"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
 >
-<input type="hidden" name="form-name" value="ask-question" />
+<input type="hidden" name="form-name" value="Contact" data-netlify="true"
+       data-netlify-honeypot="bot-field"/>
 <label v-for="(panelist, index) in panelists" :key="index">
   <input
       type="radio"
