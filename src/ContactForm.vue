@@ -5,6 +5,7 @@ import ProductsSection from "./components/ProductsSection.vue";
 import {CheckIcon, EyeIcon} from "@heroicons/vue/20/solid/index.js";
 
 </script>
+<template>
 <form
     name="ask-question"
     method="post"
