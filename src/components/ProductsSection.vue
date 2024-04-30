@@ -2,6 +2,21 @@
 import {ref} from "vue";
 import Header from "./Header.vue";
 
+import imageBumper1 from '/src/assets/products/bumper1.jpeg'
+import imageBumper2 from '/src/assets/products/bumper2.jpeg'
+
+import imageTankMap from '/src/assets/products/tank-map.png'
+import imageTank from '/src/assets/products/tank.png'
+
+import imageArchery1 from '/src/assets/products/archery1.jpg'
+import imageArchery2 from '/src/assets/products/archery2.jpg'
+
+import imageWarriorTag from '/src/assets/products/warrior-tag.jpg'
+import imageCage1 from '/src/assets/products/cages1.png'
+
+import imageSmartArchery from '/src/assets/products/smart-archery.jpg'
+
+
 const productsHome = [
   {
     id: 1,
@@ -10,8 +25,8 @@ const productsHome = [
     link: "https://www.npmjs.com/",
     image: "war-tank.jpeg",
     images: [
-      'tank-map.png',
-      'tank.jpg',
+      imageTankMap,
+      imageTank,
     ],
     includes: [
       'Main Tank War unit',
@@ -31,8 +46,8 @@ const productsHome = [
     link: "https://www.npmjs.com/",
     image: "battle-bumper.jpeg",
     images: [
-      'bumper1.jpeg',
-      'bumper2.jpeg',
+      imageBumper1,
+      imageBumper2,
     ],
     includes: [
       '8 X Combat Bumper',
@@ -53,8 +68,8 @@ const productsHome = [
     link: "https://www.npmjs.com/",
     image: "smart-archery.jpg",
     images: [
-      'archery1.jpg',
-      'archery2.jpg'
+      imageArchery1,
+      imageArchery2
     ],
     includes: [
       'Set of 10 Bows including smart sensor vest',
@@ -73,8 +88,8 @@ const productsHome = [
     link: "https://www.npmjs.com/",
     image: "warrior-tag.jpg",
     images: [
-      'warrior-tag.jpg',
-      'cages1.png',
+      imageWarriorTag,
+      imageCage1,
     ],
     includes: [
       'Live Sword Experience with Sound and Lighting effects',
@@ -92,7 +107,7 @@ const productsHome = [
     link: "https://www.npmjs.com/",
     image: "archery.jpg",
     images: [
-      'smart-archery.jpg',
+      imageSmartArchery,
     ],
     includes: [
       'Digital Screen showing Score, Target, Bow, Arrows.',
@@ -140,7 +155,7 @@ const productsHome = [
             <div class="tab-content tab-space">
               <div v-for="product in productsHome" :key="product.id" v-bind:class="{'hidden': openTab !== product.id, 'block': openTab === product.id}">
                 <div class="flex sm:flex-row flex-col flex-wrap justify-between">
-                  <div class="sm:shrink-1 shrink-0 sm:w-1/2">
+                  <div class="sm:shrink-1 shrink-0 sm:w-1/2 pr-2">
                     <h2 class="text-2xl font-semibold text-orange">{{product.name}}</h2>
                     <p v-if="product.description.length >= 1" class="font-semibold mt-2 text-sm" >{{product.description}}</p>
                     <div class="mt-5">
@@ -158,7 +173,7 @@ const productsHome = [
                   </div>
                   <div class="grid max-h-min grid-cols-1 md:grid-cols-2 auto-rows-2 gap-0.5 place-items-stretch auto-cols-auto flex-auto sm:shrink-1 shrink-0 sm:w-1/2 mt-10 sm:mt-0">
                     <div v-for="image in product.images" class="p-1">
-                      <img class="shadow-lg rounded" :src="'src/assets/products/' + image" :alt="product.name">
+                      <img class="shadow-lg rounded" :src="image" :alt="product.name">
                     </div>
                   </div>
                 </div>
