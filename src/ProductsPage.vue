@@ -42,7 +42,7 @@ const productsHome = [
 </script>
 <template>
   <Header />
-  <div class="bg-[url('assets/Hero-bg.png')] bg-center bg-no-repeat bg-cover relative isolate md:overflow-scroll overflow-scroll te px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0" >
+  <div class="bg-[url('assets/Hero-bg.png')] h-screen bg-center bg-no-repeat bg-cover relative isolate md:overflow-scroll overflow-scroll te px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0" >
     <!-- BG Pattern-->
     <div class="absolute inset-0 -z-10 overflow-hidden">
       <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-orange [mask-image:radial-gradient(64rem_64rem_at_top,orange,transparent)]" aria-hidden="true">
@@ -59,8 +59,8 @@ const productsHome = [
     <div class="flex flex-wrap px-10">
     <div class="w-full">
       <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
-        <li v-for="product in productsHome" :key="product.id" class="-mb-px mr-2 last:mr-0 flex-auto text-center">
-          <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal" v-on:click="toggleTabs(product.id)" v-bind:class="{'text-orange bg-white': openTab !== product.id, 'text-white bg-orange': openTab === product.id}">
+        <li v-for="product in productsHome" :key="product.id" class="-mb-px mr-2 last:mr-0 flex-auto text-center py-1 md:py-2">
+          <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal hover:cursor-pointer" v-on:click="toggleTabs(product.id)" v-bind:class="{'text-orange bg-white': openTab !== product.id, 'text-white bg-orange': openTab === product.id}">
             {{product.name}}
           </a>
         </li>
