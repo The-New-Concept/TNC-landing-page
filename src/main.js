@@ -8,6 +8,7 @@ import StrategicFocusAreasSection from './StrategicFocusAreasSection.vue'
 import ProductsSection from './components/ProductsSection.vue'
 import OurProducts from './ProductsPage.vue'
 import ContactForm from './components/ContactForm.vue'
+import Footer from './components/footer.vue'
 
 createApp(HeroSection).mount('#HeroSection');
 
@@ -19,3 +20,4 @@ createApp(StrategicFocusAreasSection).mount('#StrategicFocusAreasSection');
 createApp(ProductsSection).mount('#ProductsSection');
 createApp(OurProducts).mount('#OurProducts');
 createApp(ContactForm).mount('#ContactForm');
+createApp(Footer).mount('#Footer');
