@@ -1,5 +1,4 @@
 <template>
-  <Header/>
   <div class="hero-section h-screen bg-[url('assets/Hero-bg.png')] relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
 
     <!-- BG Pattern-->
@@ -15,25 +14,30 @@
       </svg>
     </div>
     <!-- /BG Pattern-->
-
+    <h1 class="mt-2 mb-10 ml-24 text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">Contact Us</h1>
     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-      <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-        <div class="lg:pr-4">
-          <div class="lg:max-w-lg">
-            <h1 class="mt-2 mb-5 text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">Contact Us</h1>
+      <div class=" bg-white lg:rounded lg:p-0 lg:shadow-md lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2">
+        <div class="bg-orange">
+          <div class="lg:max-w-lg py-20 px-10">
             <ContactForm/>
           </div>
         </div>
+        <div class="bg-white flex items-center justify-center">
+          <div>
+            <h2>THE NEW CONCEPT</h2>
+            <p>Authorized Distributor in MENA and GCC</p>
+            <ul>
+              <li>Email: Faisal@thenewconcept.co</li>
+              <li>Email: Faisal@thenewconcept.co</li>
+              <li>TEL: 00962777888856</li>
+              <li>TEL: 00962777888856</li>
+            </ul>
+            <p>B.93 Mufleh Al Ajarmeh Street
+              Amman , Jordan</p>
+          </div>
 
-
+        </div>
       </div>
-
-
-      <!-- Side Image -->
-      <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden flex justify-center lg:gap-x-8 lg:px-8">
-        <img class="w-[20rem] sm:w-[30rem]" src="./assets/TNC-Logo.png" alt="" />
-      </div>
-      <!-- /Side Image -->
     </div>
   </div>
 </template>
