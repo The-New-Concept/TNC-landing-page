@@ -37,7 +37,6 @@ const productsHome = [
       'Immersive Full Surround Sound'
     ],
     quantity: '6 Tanks',
-    price: '$60,000'
   },
   {
     id: 2,
@@ -59,7 +58,6 @@ const productsHome = [
       'Edge Server',
     ],
     quantity: '1 Set',
-    price: '$50,000'
   },
   {
     id: 3,
@@ -79,7 +77,6 @@ const productsHome = [
       'Server Networking and Routers'
     ],
     quantity: '1 Set',
-    price: '$16,000'
   },
   {
     id: 4,
@@ -98,7 +95,6 @@ const productsHome = [
       '2 Vests Permanent License',
     ],
     quantity: '1 Cage',
-    price: '$13,000'
   },
   {
     id: 5,
@@ -120,7 +116,6 @@ const productsHome = [
       '30 pcs of target papers',
     ],
     quantity: '3 Lanes',
-    price: '$13,500'
   },
 ]
 </script>
@@ -141,7 +136,7 @@ const productsHome = [
     </div>
     <!-- /BG Pattern-->
     <div class="flex sm:flex-row flex-col flex-wrap px-10">
-      <h1 class="text-white text-3xl font-bold uppercase" >our products</h1>
+      <h1 class="text-white text-3xl font-bold capitalize" >our products</h1>
       <div class="w-full">
         <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
           <li v-for="product in productsHome" :key="product.id" class="-mb-px mr-2 last:mr-0 flex-auto text-center py-1 md:py-2">
@@ -154,22 +149,21 @@ const productsHome = [
           <div class="px-4 py-5 flex-auto">
             <div class="tab-content tab-space">
               <div v-for="product in productsHome" :key="product.id" v-bind:class="{'hidden': openTab !== product.id, 'block': openTab === product.id}">
-                <div class="flex sm:flex-row flex-col flex-wrap justify-between">
+                <div class="text-center flex flex-col items-center justify-between">
+                  <h2 class="text-3xl font-light text-orange">{{product.name}}</h2>
+                  <p v-if="product.description.length >= 1" class="font-light mt-2 text-sm w-1/2" >{{product.description}}</p>
+                </div>
+                <div class="mt-10 flex sm:flex-row flex-col flex-wrap justify-between">
                   <div class="sm:shrink-1 shrink-0 sm:w-1/2 pr-2">
-                    <h2 class="text-2xl font-semibold text-orange">{{product.name}}</h2>
-                    <p v-if="product.description.length >= 1" class="font-semibold mt-2 text-sm" >{{product.description}}</p>
                     <div class="mt-5">
-                      <h3 class="font-semibold text-orange text-lg">Includes:</h3>
+                      <h3 class="font-light text-orange text-xl">Includes:</h3>
                       <ul>
-                        <li v-for="item in product.includes" class="font-semibold list-disc list-inside">{{item}}</li>
+                        <li v-for="item in product.includes" class="font-light list-disc list-inside">{{item}}</li>
                       </ul>
                     </div>
-                    <p class="font-semibold mt-2 inline-block">MOQ: <span>{{product.quantity}}</span></p>
-                    <div class="mt-2 text-orange text-lg inline-block mx-2">
-                      <p class="font-semibold">Price: <span>{{product.price}}</span></p>
-                    </div>
+                    <p class="font-light text-orange mt-2 inline-block">MOQ: <span>{{product.quantity}}</span></p>
                     <br/>
-                    <a href="/contact-us" class="mt-2 btn-orange inline-block">Order Now</a>
+                    <a href="/contact-us" class="mt-5 btn-orange  inline-block">Order Now</a>
                   </div>
                   <div class="grid max-h-min grid-cols-1 md:grid-cols-2 auto-rows-2 gap-0.5 place-items-stretch auto-cols-auto flex-auto sm:shrink-1 shrink-0 sm:w-1/2 mt-10 sm:mt-0">
                     <div v-for="image in product.images" class="p-1">
