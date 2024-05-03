@@ -157,7 +157,7 @@ const productsHome = [
                   <div class="sm:shrink-1 shrink-0 sm:w-1/2 pr-2">
                     <div class="mt-5">
                       <h3 class="font-light text-orange text-xl">Includes:</h3>
-                      <ul>
+                      <ul class="list-image-[url('assets/circle.svg')]" >
                         <li v-for="item in product.includes" class="font-light list-disc list-inside">{{item}}</li>
                       </ul>
                     </div>
