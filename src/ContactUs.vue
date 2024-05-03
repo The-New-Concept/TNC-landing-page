@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-section h-screen bg-[url('assets/Hero-bg.png')] relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+  <div class="hero-section lg:h-screen bg-[url('assets/Hero-bg.png')] bg-cover bg-center relative isolate overflow-hidden sm:px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
 
     <!-- BG Pattern-->
     <div class="absolute inset-0 -z-10 overflow-hidden">
@@ -15,25 +15,24 @@
     </div>
     <!-- /BG Pattern-->
     <h1 class="mt-2 mb-10 ml-24 text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">Contact Us</h1>
-    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-      <div class=" bg-white lg:rounded lg:p-0 lg:shadow-md lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10 ">
+      <div class="bg-white lg:overflow-hidden lg:rounded lg:p-0 lg:shadow-md lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2">
         <div class="bg-orange">
           <div class="lg:max-w-lg py-20 px-10">
             <ContactForm/>
           </div>
         </div>
-        <div class="bg-white flex items-center justify-center">
+        <div class="bg-white flex items-center justify-center p-10">
           <div>
-            <h2>THE NEW CONCEPT</h2>
-            <p>Authorized Distributor in MENA and GCC</p>
-            <ul>
-              <li>Email: Faisal@thenewconcept.co</li>
-              <li>Email: Faisal@thenewconcept.co</li>
-              <li>TEL: 00962777888856</li>
-              <li>TEL: 00962777888856</li>
+            <h2 class="font-light text-3xl" >THE NEW CONCEPT</h2>
+            <p class="text-sm">Authorized Distributor in MENA and GCC</p>
+            <ul class="mt-10 flex flex-col gap-y-2">
+              <li class="flex gap-x-3" ><AtSymbolIcon class="mt-1 h-5 w-5 flex-none text-orange" /><span>Faisal@thenewconcept.co</span></li>
+              <li class="flex gap-x-3" ><AtSymbolIcon class="mt-1 h-5 w-5 flex-none text-orange" /><span>Yousef.asfour@thenewconcept.co</span></li>
+              <li class="flex gap-x-3" ><PhoneIcon class="mt-1 h-5 w-5 flex-none text-orange" /><span>+962 777 888 856</span></li>
+              <li class="flex gap-x-3" ><PhoneIcon class="mt-1 h-5 w-5 flex-none text-orange" /><span>+962 799 534 882</span></li>
             </ul>
-            <p>B.93 Mufleh Al Ajarmeh Street
-              Amman , Jordan</p>
+            <p class="flex gap-x-3 mt-10" ><MapPinIcon class="mt-1 h-5 w-5 flex-none text-orange inline-block m-1" />B.93 Mufleh Al Ajarmeh Street, Amman , Jordan</p>
           </div>
 
         </div>
@@ -43,7 +42,7 @@
 </template>
 
 <script setup>
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon, EyeIcon, CheckIcon } from '@heroicons/vue/20/solid'
+import { AtSymbolIcon, PhoneIcon, MapPinIcon,} from '@heroicons/vue/20/solid'
 import Header from "./components/Header.vue";
 import ContactForm from "./components/ContactForm.vue";
 </script>
