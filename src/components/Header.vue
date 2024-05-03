@@ -11,12 +11,12 @@ import {Bars3Icon, XMarkIcon} from "@heroicons/vue/24/outline";
 
 const navigationLeft = [
   { name: 'Home', href: '/' },
-  { name: 'About Us', href: '/about' },
+  { name: 'About Us', href: '/about.html' },
 
 ]
 const navigationRight = [
-  { name: 'Products', href: '/products' },
-  { name: 'Contact Us', href: '/contact-us' },
+  { name: 'Products', href: '/products.html' },
+  { name: 'Contact Us', href: '/contact-us.html' },
 
 ]
 
@@ -30,7 +30,7 @@ const mobileMenuOpen = ref(false)
     <nav class="flex items-center justify-between p-6 lg:px-8 " aria-label="Global">
       <!-- Left NAV -->
       <div class="hidden lg:flex lg:gap-x-12">
-        <a v-for="item in navigationLeft" :key="item.name" :href="item.href" class="transition-all hover:bg-orange text-sm px-2 py-1 rounded leading-6 text-white hover:text-gray-200">{{ item.name }}</a>
+        <a v-for="item in navigationLeft" :key="item.name" :href="item.href" class="transition-all hover:bg-orange text-md px-2 py-1 rounded leading-6 text-white hover:text-gray-200">{{ item.name }}</a>
       </div>
       <!-- Nav Logo -->
       <div class="flex lg:flex-1 justify-center">
@@ -49,7 +49,7 @@ const mobileMenuOpen = ref(false)
 
       <!-- Right NAV -->
       <div class="hidden lg:flex lg:gap-x-12 lg:justify-end">
-        <a v-for="item in navigationRight" :key="item.name" :href="item.href" class="transition-all	hover:bg-orange text-sm px-2 py-1 rounded leading-6 text-white hover:text-gray-200">{{ item.name }}</a>
+        <a v-for="item in navigationRight" :key="item.name" :href="item.href" class="transition-all	hover:bg-orange text-md px-2 py-1 rounded leading-6 text-white hover:text-gray-200">{{ item.name }}</a>
       </div>
     </nav>
     <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
@@ -69,9 +69,6 @@ const mobileMenuOpen = ref(false)
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
               <a v-for="item in navigation" :key="item.name" :href="item.href" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{{ item.name }}</a>
-            </div>
-            <div class="py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
             </div>
           </div>
         </div>
