@@ -10,10 +10,21 @@
     </div>
     <div class="mt-4" >
       <ul class="lg:flex lg:gap-x-5">
-        <li>SOC</li>
-        <li>IAL</li>
-        <li>ME</li>
-        <li>DIA</li>
+        <li>
+          <a href="https://www.facebook.com">
+            <img class="mt-1 h-5 w-5 flex-none text-gray-50" src="../assets/facebookIcon.svg" alt="Facebook">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com">
+            <img class="mt-1 h-5 w-5 flex-none text-gray-50" src="../assets/instagramIcon.svg" alt="instagram">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com">
+            <img class="mt-1 h-5 w-5 flex-none text-gray-50" src="../assets/youtubeIcon.svg" alt="youtube">
+          </a>
+        </li>
       </ul>
     </div>
     <div class="mt-4">

@@ -1,5 +1,4 @@
 <template>
-  <Header/>
   <div class="hero-section bg-[url('assets/Hero-bg.png')] relative isolate overflow-hidden te px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
 
     <!-- BG Pattern-->

@@ -1,5 +1,4 @@
 <template>
-    <Header/>
   <div class="h-screen lg:h-screen hero-section bg-[url('assets/Hero-bg.png')]">
     <div class="flex sm:hidden lg:flex-1 self-center align-middle lg:overflow-hidden sm:overflow-scroll justify-center lg:gap-x-8 lg:px-8	">
       <img class="h-auto w-52 md:w-3/4 lg:w-3/4" src="./assets/TNC-Logo.png" alt="">
