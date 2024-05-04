@@ -3,7 +3,7 @@ import {ref} from "vue";
 import Header from "./Header.vue";
 import Galleria from 'primevue/galleria';
 
-import imageBumper1 from '/src/assets/products/bumper1.jpeg'
+import imageBumper1 from '/src/assets/products/bumper1.jpg'
 import imageBumper2 from '/src/assets/products/bumper2.jpeg'
 
 import imageTankMap from '/src/assets/products/tank-map.png'
@@ -16,7 +16,11 @@ import imageWarriorTag from '/src/assets/products/warrior-tag.jpg'
 import imageCage1 from '/src/assets/products/cages1.png'
 
 import imageSmartArchery from '/src/assets/products/smart-archery.jpg'
+import imageSmartArchery2 from '/src/assets/products/smart-archery2.jpg'
 
+import imageSlime1 from '/src/assets/products/slime.jpg'
+import imagePutty1 from '/src/assets/products/putty.jpg'
+import imagePutty2 from '/src/assets/products/putty2.jpg'
 
 const productsHome = [
   {
@@ -105,6 +109,7 @@ const productsHome = [
     image: "archery.jpg",
     images: [
       imageSmartArchery,
+      imageSmartArchery2,
     ],
     includes: [
       'Digital Screen showing Score, Target, Bow, Arrows.',
@@ -125,7 +130,7 @@ const productsHome = [
     video: "",
     image: "archery.jpg",
     images: [
-      imageSmartArchery,
+      imageSlime1,
     ],
     includes: [
       'Crystal Clear Slime',
@@ -145,7 +150,8 @@ const productsHome = [
     video: "",
     image: "archery.jpg",
     images: [
-      imageSmartArchery,
+      imagePutty1,
+      imagePutty2,
     ],
     includes: [
       'Super illusions PUTTY',
