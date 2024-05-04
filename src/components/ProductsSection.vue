@@ -23,7 +23,7 @@ const productsHome = [
     id: 1,
     name: "Tank War: First Real Life Tank War",
     description: "A groundbreaking tank warfare simulation game that combines historical accuracy, realistic gameplay, and advanced multiplayer features to offer an unparalleled gaming experience.",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ?si=5A5KS7X0etFEmhJ0",
+    video: "",
     image: imageBumper1,
     images: [
       imageTankMap,
@@ -43,7 +43,7 @@ const productsHome = [
     id: 2,
     name: "Combat Bumper",
     description: "The New Concept is not just about creating entertainment; it's about crafting experiences that resonate, inspire, and bring people together in new and exciting ways.",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ?si=5A5KS7X0etFEmhJ0",
+    video: "",
     image: "battle-bumper.jpeg",
     images: [
       imageBumper1,
@@ -64,7 +64,7 @@ const productsHome = [
     id: 3,
     name: "Smart Archery Tag",
     description: "",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ?si=5A5KS7X0etFEmhJ0",
+    video: "https://www.youtube.com/embed/EGvVcwcvx-8?si=Ajr8ORRYYzC6Qaze",
     image: "smart-archery.jpg",
     images: [
       imageArchery1,
@@ -83,7 +83,7 @@ const productsHome = [
     id: 4,
     name: "Warrior Cage",
     description: "",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ?si=5A5KS7X0etFEmhJ0",
+    video: "https://www.youtube.com/embed/MZOMA1jMNBY?si=yifxQNoUBfxiwJCB",
     image: "warrior-tag.jpg",
     images: [
       imageWarriorTag,
@@ -101,7 +101,7 @@ const productsHome = [
     id: 5,
     name: "Digital Archery Range",
     description: "",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ?si=5A5KS7X0etFEmhJ0",
+    video: "",
     image: "archery.jpg",
     images: [
       imageSmartArchery,
@@ -122,7 +122,7 @@ const productsHome = [
     id: 6,
     name: "Kaida Slime",
     description: "",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ?si=5A5KS7X0etFEmhJ0",
+    video: "",
     image: "archery.jpg",
     images: [
       imageSmartArchery,
@@ -142,7 +142,7 @@ const productsHome = [
     id: 7,
     name: "Kaida Putty",
     description: "",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ?si=5A5KS7X0etFEmhJ0",
+    video: "",
     image: "archery.jpg",
     images: [
       imageSmartArchery,
@@ -215,7 +215,7 @@ const productsHome = [
 
 
                   <div class="grid max-h-min grid-cols-1 md:grid-cols-1 auto-rows-2 gap-0.5 place-items-stretch auto-cols-auto flex-auto sm:shrink-1 shrink-0 sm:w-1/2 mt-10 sm:mt-0">
-                      <div>
+                      <div v-if="product.video.length !== 0" >
                         <iframe class="w-full aspect-video" :src=product.video title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                       </div>
                       <div class="grid grid-cols-2" >
