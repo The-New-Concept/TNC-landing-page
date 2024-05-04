@@ -1,6 +1,7 @@
 <script setup>
 import {ref} from "vue";
 import Header from "./Header.vue";
+import Galleria from 'primevue/galleria';
 
 import imageBumper1 from '/src/assets/products/bumper1.jpeg'
 import imageBumper2 from '/src/assets/products/bumper2.jpeg'
