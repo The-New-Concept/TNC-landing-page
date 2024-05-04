@@ -24,7 +24,7 @@ const productsHome = [
     name: "Tank War: First Real Life Tank War",
     description: "A groundbreaking tank warfare simulation game that combines historical accuracy, realistic gameplay, and advanced multiplayer features to offer an unparalleled gaming experience.",
     video: "https://www.youtube.com/embed/dQw4w9WgXcQ?si=5A5KS7X0etFEmhJ0",
-    image: "war-tank.jpeg",
+    image: imageBumper1,
     images: [
       imageTankMap,
       imageTank,
@@ -212,13 +212,23 @@ const productsHome = [
                     <a href="/contact-us" class="mt-10 btn-orange inline-block">Get a Quote</a>
                   </div>
 
+
+
                   <div class="grid max-h-min grid-cols-1 md:grid-cols-1 auto-rows-2 gap-0.5 place-items-stretch auto-cols-auto flex-auto sm:shrink-1 shrink-0 sm:w-1/2 mt-10 sm:mt-0">
                       <div>
                         <iframe class="w-full aspect-video" :src=product.video title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                       </div>
                       <div class="grid grid-cols-2" >
                         <div v-for="image in product.images" class="">
-                          <img class="shadow-lg rounded" :src="image" :alt="product.name">
+                          <!--<img class="shadow-lg rounded" :src="image" :alt="product.name">-->
+                          <img class="shadow-lg rounded" v-fullscreen-image="{
+                                  imageUrl: product.images,
+                                  withDownload: false,
+                                  animation: 'blur',
+                                  }"
+                               :src=image
+                               :alt="product.name"
+                          />
                         </div>
                       </div>
                   </div>
