@@ -1,10 +1,11 @@
 <template>
-  <form
+  <div data-tf-live="01HX2TVYY346NPW09ZTH7YVMXW"></div>
+  <!--<form
       name="contact-us"
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-  >
+  >N
     <input type="hidden" name="form-name" value="contact-us" />
     <div>
       <label for="name" class="hidden">Your Name</label>
@@ -59,7 +60,7 @@
     <div>
       <button type="submit" class="bg-white text-orange px-5 py-2 font-medium hover:opacity-95 rounded-sm mt-2 text-sm shadow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange">Submit</button>
     </div>
-  </form>
+  </form>-->
 </template>
 <script>
 export default {
