@@ -3,14 +3,14 @@ import {ref} from "vue";
 import Header from "./Header.vue";
 import Galleria from 'primevue/galleria';
 
-import imageBumper1 from '/src/assets/products/bumper1.jpg'
-import imageBumper2 from '/src/assets/products/bumper2.jpeg'
+import imageBumper1 from '/src/assets/products/bumper1.jpeg'
+import imageBumper2 from '/src/assets/products/bumper2.jpg'
 
 import imageTankMap from '/src/assets/products/tank-map.png'
 import imageTank from '/src/assets/products/tank.png'
 
 import imageArchery1 from '/src/assets/products/archery1.jpg'
-import imageArchery2 from '/src/assets/products/archery2.jpg'
+import imageArchery2 from '/src/assets/products/archery2.JPEG'
 
 import imageWarriorTag from '/src/assets/products/warrior-tag.jpg'
 import imageCage1 from '/src/assets/products/cages1.png'
