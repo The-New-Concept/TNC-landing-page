@@ -3,7 +3,7 @@ import {ref} from "vue";
 import Header from "./Header.vue";
 import Galleria from 'primevue/galleria';
 
-import imageBumper1 from '/src/assets/products/bumper1.jpeg'
+import imageBumper1 from '/src/assets/products/bumper1.jpg'
 import imageBumper2 from '/src/assets/products/bumper2.jpg'
 
 import imageTankMap from '/src/assets/products/tank-map.png'
