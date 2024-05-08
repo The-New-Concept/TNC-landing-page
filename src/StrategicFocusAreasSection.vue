@@ -37,7 +37,7 @@
           <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
             <ul role="list" class="mt-8 space-y-8 text-gray-600">
               <li class="flex gap-x-3">
-                <EyeIcon class="mt-1 h-5 w-5 flex-none text-orange-light" aria-hidden="true" />
+                <CheckIcon class="mt-1 h-5 w-5 flex-none text-orange-light" aria-hidden="true" />
                 <span><strong class="font-semibold text-gray-900">Research and Development:</strong> Investing in a dedicated R&D team to ensure a constant flow of innovative ideas and technologies.
 </span>
               </li>
