@@ -19,3 +19,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.value-container {
+  @apply text-center flex flex-col items-center mx-2 py-10 px-5 rounded-sm md:shadow-lg;
+}
