@@ -6,6 +6,8 @@
         <li class="hover:text-orange transition-all"><a href="/about">About</a></li>
         <li class="hover:text-orange transition-all"><a href="/products">Products</a></li>
         <li class="hover:text-orange transition-all"><a href="/contact-us">Contact Us</a></li>
+        <li class="hover:text-orange transition-all"><a :href=BattleCat>Battle Company Catalogue</a></li>
+        <li class="hover:text-orange transition-all"><a :href=SlimeCat>Slime Universe Catalogue</a></li>
       </ul>
     </div>
     <div class="mt-4" >
@@ -36,4 +38,6 @@
 <script setup>
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon, EyeIcon, CheckIcon } from '@heroicons/vue/20/solid'
 import Header from './Header.vue'
+import BattleCat from '/src/assets/Battle-Company-Book-2024.pdf'
+import SlimeCat from '/src/assets/Slime-Universe-Catalogue.pdf'
 </script>
